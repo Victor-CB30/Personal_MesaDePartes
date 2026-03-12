@@ -3,7 +3,7 @@
     class Usuario extends Conectar{
 
        /*  TODO: Metoo para registrar un nuevo usuario en la base de datos  */
-        public function registrar usuario($usu_nomape, $usu_correo, $usu_pass){
+        public function registrar_usuario($usu_nomape, $usu_correo, $usu_pass){
            /*  TODO: Obtener la conexion a la base de datos utilizando el metodo de la clase padre */
             $conectar = parent::conexion();
          /*    TODO: Establece el juego de caracteres a UTF-8 utilizando el metodo de la clase padre  */
