@@ -4,7 +4,7 @@
     require_once("../models/Usuario.php");
 
     /* TODO: Crea una instancia de la clase Usuarios */
-    $Usuario = new Usuario();
+    $usuario = new Usuario();
 
     /*     TODO: Utiliza una estructura SWITCH para determinar la operacion a realizar segun el valor $_GET["op"] */
     switch($_GET["op"]){
@@ -12,7 +12,10 @@
         case "registrar":
 
             /* TODO: Llama al metodo registrar_usuario de la instancia $usuario con los datos del formulario */
-            $usuario-> registrar_usuario($_Post["usu_nomape"],["usu_correo"],["usu_pass"]);
+            $usuario->registrar_usuario(
+            $_POST["usu_nomape"],
+            $_POST["usu_correo"],
+            $_POST["usu_pass"]);
 
             break; 
     }

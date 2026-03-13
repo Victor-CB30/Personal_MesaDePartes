@@ -37,35 +37,29 @@
                                         <div class="text-center">
                                             <h5 class="mb-0">Registrar Cuenta</h5>
                                             <p class="text-muted mt-2" style="margin-bottom: -1rem !important">Registre sus datos en el portal.</p>
-                                        </div>
-                                        <form id="mnt_form" class="needs-validation custom-form mt-4 pt-2" novalidate="" action="index.html">
+                                        </div><!--El no validate permite que el submit se ejecute antes de que llegue a Js query y pueda mostrar el mensaje de error-->
+                                        <form id="mnt_form" class="needs-validation custom-form mt-4 pt-2" method="post" action="../../controllers/usuario.php?op=registrar" novalidate>
                                             <div class="mb-3">
                                                 <label for="usu_correo" class="form-label">Correo Electronico</label>
-                                                <input type="email" class="form-control" id="usu_correo" name="usu_correo" placeholder="Ingrese Correo Electronico" required="">
+                                                <input type="email" class="form-control" id="usu_correo" name="usu_correo" placeholder="Ingrese Correo Electronico" required>
                                                 <div class="validation-error text-danger"></div>
                                             </div>
 
                                             <div class="mb-3">
                                                 <label for="usu_nomape" class="form-label">Nombres y Apellidos</label>
-                                                <input type="text" class="form-control" id="usu_nomape" name="usu_nomape" placeholder="Ingrese Nombres" required="">
+                                                <input type="text" class="form-control" id="usu_nomape" name="usu_nomape" placeholder="Ingrese Nombres" required>
                                                 <div class="validation-error text-danger"></div>
                                             </div>
 
-                                            <!--<div class="mb-3">
-                                                <label for="usu_pass_confir" class="form-label">Ingrese Documento de Identidad</label>
-                                                <input type="number" class="form-control" id="" name="usu_dni" placeholder="Ingrese DNI" required="">
-                                                <div class="validation-error text-danger"></div>
-                                            </div>-->
-
                                             <div class="mb-3">
                                                 <label for="usu_pass" class="form-label">Contraseña</label>
-                                                <input type="password" class="form-control" id="usu_pass" name="usu_password" placeholder="Ingrese Contraseña" required="">
+                                                <input type="password" class="form-control" id="usu_pass" name="usu_pass" placeholder="Ingrese Contraseña" required="">
                                                 <div class="validation-error text-danger"></div>
                                             </div>
 
                                             <div class="mb-3">
                                                 <label for="usu_pass_confir" class="form-label">Confirmar Contraseña</label>
-                                                <input type="password" class="form-control" id="" name="usu_pass_confir" placeholder="Confirmar Contraseña" required="">
+                                                <input type="password" class="form-control" id="usu_pass_confir" name="usu_pass_confir" placeholder="Confirmar Contraseña" required>
                                                 <div class="validation-error text-danger"></div>
                                             </div>
 
@@ -202,6 +196,6 @@
 
         <script type="text/javascript" src="registro.js"></script>
     </body>
-            0973595517
+            <!-- 0973595517 -->
 </html>
 
